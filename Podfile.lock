@@ -1,0 +1,32 @@
+PODS:
+  - Bolts (1.1.5):
+    - Bolts/AppLinks (= 1.1.5)
+    - Bolts/Tasks (= 1.1.5)
+  - Bolts/AppLinks (1.1.5):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.1.5)
+  - HexColors (2.2.1)
+  - Parse (1.7.2.1):
+    - Bolts/Tasks (>= 1.1.5)
+  - ParseUI (1.1.3):
+    - Parse (~> 1.7)
+  - Reachability (3.2)
+  - TSMessages (0.9.12):
+    - HexColors
+
+DEPENDENCIES:
+  - Bolts
+  - Parse
+  - ParseUI
+  - Reachability
+  - TSMessages
+
+SPEC CHECKSUMS:
+  Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  Parse: 8213b05b52768b34b87e1e41fd9efc88a9933f3f
+  ParseUI: 1a68e9cebc3bd458eed9605ce7b33d7cc082f473
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  TSMessages: 2a52642128d7ab15b46930c810b9c9403a2b58f3
+
+COCOAPODS: 0.35.0

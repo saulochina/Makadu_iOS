@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController">
+            <connections>
+                <outlet property="nameUserTextField" destination="oJ4-4e-jHg" id="JgF-9b-tbw"/>
+                <outlet property="passwordTextField" destination="KXW-rQ-qDY" id="JXs-H9-w3I"/>
+                <outlet property="userTextField" destination="fdq-Eg-9gD" id="EUr-v8-hl8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="logo_makadu.png" translatesAutoresizingMaskIntoConstraints="NO" id="itJ-SI-sv1">
+                    <rect key="frame" x="127" y="73" width="120" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="2Ko-Cj-zWG"/>
+                        <constraint firstAttribute="width" constant="120" id="vtz-kB-mdU"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail: makadu@makadu.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdq-Eg-9gD">
+                    <rect key="frame" x="19" y="227" width="337" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJ4-4e-jHg">
+                    <rect key="frame" x="19" y="183" width="337" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikZ-WG-nMT">
+                    <rect key="frame" x="19" y="323" width="337" height="30"/>
+                    <color key="backgroundColor" red="0.47450980390000003" green="0.68627450980000004" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Cadastrar">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signUpTouched:" destination="-1" eventType="touchUpInside" id="FgF-9i-vD2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Crie sua conta na Makadu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOi-De-3dd">
+                    <rect key="frame" x="19" y="144" width="337" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXW-rQ-qDY">
+                    <rect key="frame" x="19" y="272" width="337" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNi-Lh-ZNj">
+                    <rect key="frame" x="19" y="367" width="337" height="30"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginTouched:" destination="-1" eventType="touchUpInside" id="5Ka-C6-7Mc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.2784313725" green="0.64313725489999995" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fdq-Eg-9gD" firstAttribute="top" secondItem="oJ4-4e-jHg" secondAttribute="bottom" constant="14" id="9DZ-zq-XqM"/>
+                <constraint firstItem="oJ4-4e-jHg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="Cy4-qe-B5z"/>
+                <constraint firstAttribute="centerX" secondItem="itJ-SI-sv1" secondAttribute="centerX" id="DwP-uh-gSc"/>
+                <constraint firstAttribute="trailing" secondItem="ikZ-WG-nMT" secondAttribute="trailing" constant="19" id="EDH-tu-7n1"/>
+                <constraint firstAttribute="trailing" secondItem="oJ4-4e-jHg" secondAttribute="trailing" constant="19" id="FMj-yo-RnS"/>
+                <constraint firstAttribute="trailing" secondItem="TNi-Lh-ZNj" secondAttribute="trailing" constant="19" id="K4N-Ti-dGJ"/>
+                <constraint firstItem="KXW-rQ-qDY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="S1K-Rs-2RB"/>
+                <constraint firstItem="ikZ-WG-nMT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="YYP-U5-iCl"/>
+                <constraint firstItem="ikZ-WG-nMT" firstAttribute="top" secondItem="KXW-rQ-qDY" secondAttribute="bottom" constant="21" id="aGn-SK-lbU"/>
+                <constraint firstItem="qOi-De-3dd" firstAttribute="top" secondItem="itJ-SI-sv1" secondAttribute="bottom" constant="27" id="aN2-QM-pHS"/>
+                <constraint firstItem="TNi-Lh-ZNj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="dgx-Qd-Xrg"/>
+                <constraint firstAttribute="trailing" secondItem="KXW-rQ-qDY" secondAttribute="trailing" constant="19" id="fmy-sK-JBR"/>
+                <constraint firstItem="TNi-Lh-ZNj" firstAttribute="top" secondItem="ikZ-WG-nMT" secondAttribute="bottom" constant="14" id="hMX-Hu-JN3"/>
+                <constraint firstAttribute="trailing" secondItem="fdq-Eg-9gD" secondAttribute="trailing" constant="19" id="hWp-Ht-gZY"/>
+                <constraint firstItem="oJ4-4e-jHg" firstAttribute="top" secondItem="qOi-De-3dd" secondAttribute="bottom" constant="18" id="kZd-at-mxV"/>
+                <constraint firstAttribute="trailing" secondItem="qOi-De-3dd" secondAttribute="trailing" constant="19" id="oH5-AZ-6rk"/>
+                <constraint firstItem="fdq-Eg-9gD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="rQE-CJ-9Sb"/>
+                <constraint firstItem="qOi-De-3dd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="sLB-Np-osX"/>
+                <constraint firstItem="KXW-rQ-qDY" firstAttribute="top" secondItem="fdq-Eg-9gD" secondAttribute="bottom" constant="15" id="tQK-CL-qQG"/>
+                <constraint firstItem="itJ-SI-sv1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="u3E-xm-0qn"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="390.5" y="86.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_makadu.png" width="1092" height="635"/>
+    </resources>
+</document>
